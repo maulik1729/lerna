@@ -41,20 +41,18 @@
 40 silly addFile /Users/maulikpatel/lerna/packages/spc/package.json
 41 silly commit Publish
 41 silly commit
-41 silly commit  - spc1729@2.0.0
+41 silly commit  - spc1729@2.0.0-master
 42 verbose commit [ 'commit',
 42 verbose commit   '--no-verify',
 42 verbose commit   '-F',
-42 verbose commit   '/private/var/folders/xh/cl2zcthx52n948s9dy745zfw0000gp/T/e42b36b1-765e-46df-8a35-469e19afd2db/lerna-commit.txt' ]
-43 silly addTag spc1729@2.0.0
-44 error execute caught error
-45 error Error: fatal: tag 'spc1729@2.0.0' already exists
-45 error
-45 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
-45 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-45 error     at Function.addTag (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:100:39)
-45 error     at /usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:767:39
-45 error     at Array.forEach (<anonymous>)
-45 error     at PublishCommand.gitCommitAndTagVersionForUpdates (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:766:12)
-45 error     at PublishCommand.commitAndTagUpdates (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:738:26)
-45 error     at PublishCommand.execute (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:329:14)
+42 verbose commit   '/private/var/folders/xh/cl2zcthx52n948s9dy745zfw0000gp/T/b712dae3-2a14-4bf4-9cba-3fe6511e2eeb/lerna-commit.txt' ]
+43 error execute caught error
+44 error Error: On branch abc
+44 error nothing to commit, working tree clean
+44 error
+44 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
+44 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+44 error     at Function.commit (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:94:39)
+44 error     at PublishCommand.gitCommitAndTagVersionForUpdates (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:765:30)
+44 error     at PublishCommand.commitAndTagUpdates (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:738:26)
+44 error     at PublishCommand.execute (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:329:14)
