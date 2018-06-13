@@ -9,13 +9,58 @@
 8 silly initialize attempt
 9 silly isDetachedHead
 10 silly getCurrentBranch
-11 error initialize caught error
-12 error Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
-12 error Use '--' to separate paths from revisions, like this:
-12 error 'git <command> [<revision>...] -- [<file>...]'
-12 error
-12 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
-12 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-12 error     at Function.getCurrentBranch (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:202:59)
-12 error     at Function.isDetachedHead (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:45:37)
-12 error     at PublishCommand.initialize (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:260:36)
+11 verbose getCurrentBranch master
+12 verbose isDetachedHead false
+13 silly getCurrentBranch
+14 verbose getCurrentBranch master
+15 silly getUpdates
+16 info Checking for updated packages...
+17 silly hasTags
+18 verbose hasTags true
+19 silly getLastTag
+20 verbose getLastTag sac1729@1.0.5
+21 info Comparing with sac1729@1.0.5.
+22 silly diffSinceIn sac1729@1.0.5 packages/sac
+23 silly diff packages/sac/adsa.js
+24 silly diffSinceIn sac1729@1.0.5 packages/spc
+25 silly diff
+26 verbose updated sac1729
+27 info Checking for prereleased packages...
+28 silly collectDependents
+29 silly isPackageDependentOf sac1729 sac1729
+30 silly isPackageDependentOf spc1729 sac1729
+31 silly collectUpdates
+32 verbose has filtered update sac1729
+33 silly initialize success
+34 silly execute attempt
+35 silly runScriptSync preversion undefined
+36 silly runScriptSync preversion sac1729
+37 silly runScriptSync version sac1729
+38 silly runScriptSync version undefined
+39 silly addFile /Users/maulikpatel/lerna/packages/sac/package.json
+40 silly commit Publish
+40 silly commit
+40 silly commit  - sac1729@1.0.5
+41 verbose commit [ 'commit',
+41 verbose commit   '--no-verify',
+41 verbose commit   '-F',
+41 verbose commit   '/private/var/folders/xh/cl2zcthx52n948s9dy745zfw0000gp/T/fd80b0e7-0bd2-49bb-954f-8f0bd6acf9da/lerna-commit.txt' ]
+42 error execute caught error
+43 error Error: On branch master
+43 error Changes not staged for commit:
+43 error 	modified:   lerna-debug.log
+43 error 	modified:   package.json
+43 error 	modified:   packages/sac/adsa.js
+43 error
+43 error Untracked files:
+43 error 	node_modules/
+43 error 	package-lock.json
+43 error
+43 error no changes added to commit
+43 error
+43 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
+43 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+43 error     at Function.commit (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:94:39)
+43 error     at PublishCommand.gitCommitAndTagVersionForUpdates (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:765:30)
+43 error     at PublishCommand.commitAndTagUpdates (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:738:26)
+43 error     at PublishCommand.execute (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:329:14)
