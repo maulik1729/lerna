@@ -44,19 +44,10 @@
 41 verbose commit [ 'commit',
 41 verbose commit   '--no-verify',
 41 verbose commit   '-F',
-41 verbose commit   '/private/var/folders/xh/cl2zcthx52n948s9dy745zfw0000gp/T/fd80b0e7-0bd2-49bb-954f-8f0bd6acf9da/lerna-commit.txt' ]
+41 verbose commit   '/private/var/folders/xh/cl2zcthx52n948s9dy745zfw0000gp/T/710fe07f-c7c0-4437-9e30-ba420d7c09c0/lerna-commit.txt' ]
 42 error execute caught error
 43 error Error: On branch master
-43 error Changes not staged for commit:
-43 error 	modified:   lerna-debug.log
-43 error 	modified:   package.json
-43 error 	modified:   packages/sac/adsa.js
-43 error
-43 error Untracked files:
-43 error 	node_modules/
-43 error 	package-lock.json
-43 error
-43 error no changes added to commit
+43 error nothing to commit, working tree clean
 43 error
 43 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
 43 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
