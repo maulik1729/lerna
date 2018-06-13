@@ -9,49 +9,52 @@
 8 silly initialize attempt
 9 silly isDetachedHead
 10 silly getCurrentBranch
-11 verbose getCurrentBranch master
+11 verbose getCurrentBranch abc
 12 verbose isDetachedHead false
 13 silly getCurrentBranch
-14 verbose getCurrentBranch master
+14 verbose getCurrentBranch abc
 15 silly getUpdates
 16 info Checking for updated packages...
 17 silly hasTags
 18 verbose hasTags true
 19 silly getLastTag
-20 verbose getLastTag sac1729@1.0.5
-21 info Comparing with sac1729@1.0.5.
-22 silly diffSinceIn sac1729@1.0.5 packages/sac
-23 silly diff packages/sac/adsa.js
-24 silly diffSinceIn sac1729@1.0.5 packages/spc
-25 silly diff
-26 verbose updated sac1729
+20 verbose getLastTag sac1729@2.0.0
+21 info Comparing with sac1729@2.0.0.
+22 silly diffSinceIn sac1729@2.0.0 packages/sac
+23 silly diff
+24 silly diffSinceIn sac1729@2.0.0 packages/spc
+25 silly diff packages/spc/package.json
+26 verbose updated spc1729
 27 info Checking for prereleased packages...
-28 silly collectDependents
-29 silly isPackageDependentOf sac1729 sac1729
-30 silly isPackageDependentOf spc1729 sac1729
-31 silly collectUpdates
-32 verbose has filtered update sac1729
-33 silly initialize success
-34 silly execute attempt
-35 silly runScriptSync preversion undefined
-36 silly runScriptSync preversion sac1729
-37 silly runScriptSync version sac1729
-38 silly runScriptSync version undefined
-39 silly addFile /Users/maulikpatel/lerna/packages/sac/package.json
-40 silly commit Publish
-40 silly commit
-40 silly commit  - sac1729@1.0.5
-41 verbose commit [ 'commit',
-41 verbose commit   '--no-verify',
-41 verbose commit   '-F',
-41 verbose commit   '/private/var/folders/xh/cl2zcthx52n948s9dy745zfw0000gp/T/710fe07f-c7c0-4437-9e30-ba420d7c09c0/lerna-commit.txt' ]
-42 error execute caught error
-43 error Error: On branch master
-43 error nothing to commit, working tree clean
-43 error
-43 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
-43 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-43 error     at Function.commit (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:94:39)
-43 error     at PublishCommand.gitCommitAndTagVersionForUpdates (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:765:30)
-43 error     at PublishCommand.commitAndTagUpdates (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:738:26)
-43 error     at PublishCommand.execute (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:329:14)
+28 verbose prereleased spc1729
+29 silly collectDependents
+30 silly isPackageDependentOf sac1729 spc1729
+31 silly isPackageDependentOf spc1729 spc1729
+32 silly collectUpdates
+33 verbose has filtered update spc1729
+34 silly initialize success
+35 silly execute attempt
+36 silly runScriptSync preversion undefined
+37 silly runScriptSync preversion spc1729
+38 silly runScriptSync version spc1729
+39 silly runScriptSync version undefined
+40 silly addFile /Users/maulikpatel/lerna/packages/spc/package.json
+41 silly commit Publish
+41 silly commit
+41 silly commit  - spc1729@2.0.0
+42 verbose commit [ 'commit',
+42 verbose commit   '--no-verify',
+42 verbose commit   '-F',
+42 verbose commit   '/private/var/folders/xh/cl2zcthx52n948s9dy745zfw0000gp/T/e42b36b1-765e-46df-8a35-469e19afd2db/lerna-commit.txt' ]
+43 silly addTag spc1729@2.0.0
+44 error execute caught error
+45 error Error: fatal: tag 'spc1729@2.0.0' already exists
+45 error
+45 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
+45 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+45 error     at Function.addTag (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:100:39)
+45 error     at /usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:767:39
+45 error     at Array.forEach (<anonymous>)
+45 error     at PublishCommand.gitCommitAndTagVersionForUpdates (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:766:12)
+45 error     at PublishCommand.commitAndTagUpdates (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:738:26)
+45 error     at PublishCommand.execute (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:329:14)
