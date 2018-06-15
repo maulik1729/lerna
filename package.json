@@ -2,7 +2,4 @@
 	"devDependencies": {
 		"lerna": "^2.11.0"
 	},
-	"dependencies": {
-		"spr-paid-components": "^1.0.0"
-	}
 }
